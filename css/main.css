@@ -1,0 +1,15 @@
+li{
+  list-style: none;
+}
+/* reset iview style */
+.ivu-layout-header{
+    background-color: #fff!important;
+    padding:0 40px !important;
+    height: 95px !important;
+    line-height: 95px !important;
+}
+/* 修改animation.css动画时间 */
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}

@@ -1,13 +1,13 @@
 <template>
     <div class="public-header">
         <Header class="content">
-            <nuxt-link class="logo" to="/"><img src="../assets/img/logo.png" alt=""></nuxt-link>
+            <nuxt-link class="logo" to="/"><img src="../assets/img/logo1.png" alt=""></nuxt-link>
             <div class="combination-message">
                 <div class="message-left">
                     <i class="icon--size iconfont icon-gupiao"></i>
                 </div>
                 <div class="message-right">
-                    <h4>股票代码</h4>
+                    <h4>证券代码</h4>
                     <p>834465</p>
                 </div>
             </div>
@@ -59,7 +59,7 @@ export default {
     align-items: center;
 }
 .combination-message:nth-of-type(1){
-    margin-left: 450px
+    margin-left: 310px
 }
 .combination-message:nth-of-type(2){
     margin-left: 190px;

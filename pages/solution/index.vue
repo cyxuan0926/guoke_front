@@ -77,9 +77,14 @@ export default {
 }
 .solution-list li{
     text-align: center;
-  height: 270px;
-  width: 270px;
+  /*height: 270px;*/
+  /*width: 270px;*/
   margin: 0 15px 30px 15px;
+  /*background: aqua;*/
+  /*position: relative;*/
+  /*overflow: hidden;*/
+  height: 370px;
+  width: 370px;
   background: aqua;
   position: relative;
   overflow: hidden;

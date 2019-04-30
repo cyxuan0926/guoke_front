@@ -8,7 +8,8 @@ export default {
   // baseURL: 'https://www.yuwugongkai.com/',
   // baseURL: 'http://10.10.10.29:8081/', // 杨波
   // baseURL: 'http://10.10.10.15:8081/',
-  baseURL: 'http://120.79.67.25:7001',
+  // baseURL: 'http://120.79.67.25:7001',
+  baseURL: 'http://localhost:7003/',
   // baseURL: 'http://10.10.10.2:8081/',
   // baseURL: 'http://localhost:8081',
   // baseURL: 'http://10.10.10.103:8081/', // 刘琴
@@ -20,7 +21,7 @@ export default {
   // 设置请求头
   headers: {
     //  'X-Requested-With': 'XMLHttpRequest',
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
     // 'Content-Type': 'application/json'
   },
   // post 请求参数

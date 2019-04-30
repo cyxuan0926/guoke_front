@@ -3,7 +3,7 @@
         <div class="detail-content">
           <div class="detail-left">
             <div class="pic-left">
-              <img ref="left" src="../assets/img/about-us-one.jpg" alt="">
+              <img ref="left" src="../assets/img/company-looks.jpg" alt="">
               <img ref="up" src="../assets/img/about-us-two.jpg" alt="">
             </div>
             <div class="pic-right">

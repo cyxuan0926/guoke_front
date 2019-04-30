@@ -4,22 +4,23 @@
         <CarouselItem v-for="(item,index) in bannerList" :key="index">
             <div class="item-carousel">
               <img :src='item.imgUrl' alt="banner">
-              <div class="more">
-                <div class="more-wrap">
-                  <div class="more-content">
-                    <h3>{{item.title}}</h3>
-                    <p>{{item.description}}</p>
-                    <nuxt-link v-if="item.url" :to="item.url">了解更多</nuxt-link>
-                  </div>
-                </div>
-              </div>
+              <!--<div class="more">-->
+                <!--<div class="more-wrap">-->
+                  <!--<div class="more-content">-->
+                    <!--<h3>{{item.title}}</h3>-->
+                    <!--<p>{{item.description}}</p>-->
+                    <!--<nuxt-link v-if="item.url" :to="item.url">了解更多</nuxt-link>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
             </div>
         </CarouselItem>
       </Carousel>
       <Detail />
       <section class="project">
           <h3>解决方案</h3>
-          <p>在数字交互的大背景下，国科云通通过交互体验服务，助力企业直达终端用户</p>
+          <p>智慧司法是以物联网、云计算、大数据、区块链、智能AI等新一代信息技术为依托</p>
+          <p>做到司法防控的智能化、管理的精细化、决策的科学化、矫正的知识化，即强调对司法的全面感知、协同联动，形成司法工作管理模式创新生态</p>
           <Tabs active-key="1">
               <TabPane v-for="(arr,index) in solutionList" :key="index" :name="`name${index}`">
                 <ul class="project-list">
@@ -128,7 +129,7 @@ export default {
   color: #333;
 }
 .project>p{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 14px;
   color: #999;
@@ -191,7 +192,7 @@ export default {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  padding-top: 180px;
+  padding-top: 26%;
   box-sizing: border-box;
   display: block;
 }
@@ -226,13 +227,13 @@ export default {
 }
 .project-list li .mark:hover a{
   opacity: 1;
-  transform: translateY(-20px);
+  transform: translateY(-45px);
 }
 .project-list li .mark:hover h4{
-  transform: translateY(-20px);
+  transform: translateY(-45px);
 }
 .project-list li .mark:hover p{
-  transform: translateY(-20px);
+  transform: translateY(-45px);
 }
 </style>
 

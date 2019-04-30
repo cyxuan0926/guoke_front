@@ -6,7 +6,7 @@
     <div v-if="solutionDetail"  class="solution-detail--content">
       <h3>{{solutionDetail.name}}</h3>
       <h4>软件介绍</h4>
-      <p>{{solutionDetail.introduction}}</p>
+      <div v-html="solutionDetail.introduction"></div>
       <h4>组成部分和应用领域</h4>
       <p>{{solutionDetail.constitute}}</p>
       <h4>技术特点</h4>
@@ -67,7 +67,7 @@ export default {
 .solution-detail--content{
   width: 1200px;
   margin: 0 auto;
-  padding: 50px 200px 70px 200px;
+  padding: 20px 100px 0px 100px;
   box-sizing: border-box;
 }
 .solution-detail--content h3{
@@ -85,14 +85,15 @@ export default {
 }
 .solution-detail--content p{
   text-indent: 2em;
-  font-size:12px;
+  font-size:13px;
   line-height: 20px;
   color: #333;
 }
 .solution-detail--content ol{
-  padding-left: 26px;
+  padding-left: 24px;
 }
 .solution-detail--content ol li{
+  font-size: 13px;
   line-height: 20px;
 }
 .not-find{

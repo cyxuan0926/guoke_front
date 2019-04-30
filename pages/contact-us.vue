@@ -4,7 +4,7 @@
     <public-nav />
     <child-banner :childBanner='childBanner' />
     <div class="contact-us--content">
-        <baidu-map :scrollwheelzoom=true class='bm-view' :center="center" :zoom="zoom" @ready="handler" ak='U6dZStufA4fU4QMywYWLTEawS1GK027b' >
+        <baidu-map :scroll-wheel-zoom=true class='bm-view' :center="center" :zoom="zoom" @ready="handler" ak='U6dZStufA4fU4QMywYWLTEawS1GK027b' >
             <bm-marker  :position="center" class="marker"  >
                 <bm-info-window :show=true >国科政信科技(北京)股份有限公司</bm-info-window>
             </bm-marker>
@@ -12,18 +12,13 @@
         <ul class="contact-list">
             <li>
                 <h4><i class="icon iconfont icon-location"></i>&nbsp;地址</h4>
-                <p>国科征信总部</p>
+                <p>国科政信科技（北京）股份有限公司</p>
                 <p>地址：北京市海淀区西三旗昌临813号A11号楼</p>
                 <p>邮政编码：100085</p>
             </li>
             <li>
                 <h4><i class="icon iconfont icon-phone"></i>&nbsp;电话</h4>
                 <p>联系方式：010-82911260</p>
-                <p>董事长办公室：010-82911260 </p>
-                <p>产品咨询与购买：010-82911265</p>
-                <p>人事行政部：010-82911287</p>
-                <p>财务部：010-82911273 </p>
-                <p>客服投诉：010-82911285</p>
             </li>
             <li>
                 <h4><i class="icon iconfont icon-fax"></i>&nbsp;传真</h4>
@@ -48,7 +43,7 @@ import PublicHeader from '../components/PublicHeader'
 import PublicNav from '../components/PublicNav'
 import ChildBanner from '../components/ChildBanner'
 import PublicFooter from '../components/PublicFooter'
-
+// 百度地图插件：https://dafrok.github.io/vue-baidu-map/#/zh/index
 export default {
   data () {
     return {
@@ -87,7 +82,7 @@ export default {
 <style>
 .BMap_Marker div{
     top: -23px;
-    
+
 }
 .BMap_Marker img{
     width: 35px!important;
